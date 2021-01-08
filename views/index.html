@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Load Twitter Bootstrap from Codepen -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+
+      <title>File Metadata</title>
+      <!-- <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon"/> -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 customDivCenter">
+
+          <h2>File Metadata Microservice</h2>
+          <br/>
+          <p>
+            Upload a file to get the name, type, and size in bytes in a JSON response at:
+          </p>
+          <p><code>https://file-metadata.jylee3.repl.co/api/fileanalyse</code></p>
+          <div class="view customForm">
+            <h4 id="output"></h4>
+            <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+              <button class="btn">
+                <input id="inputfield" type="file"  class="form-control-file" name="upfile">
+              </button>
+              <br/>
+              <button class="btn btn-block">
+                <input id="button" type="submit" value="Upload">
+              </button>
+            </form>
+          </div>
+          <!-- <div class="footer">
+            <p>
+              by 
+              <a href="http://www.freecodecamp.com">freeCodeCamp</a>
+            </p>
+          </div> -->
+
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </body>
+</html>
